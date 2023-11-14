@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dp</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="sp-2023-dp">SP 2023 DP</h1>
+<h1 id="question-1">Question 1</h1>
+<h2 id="problem-statement">Problem statement</h2>
+<p><img src="https://cdn.discordapp.com/attachments/623044410287849492/1151139638640132148/Q1.png" alt="Untitled"></p>
+<h2 id="class-definition">Class Definition</h2>
+<p><strong>Class: <code>Question1</code></strong></p>
+<p><strong>Method: <code>minSteps</code></strong></p>
+<p>The class <code>Question1</code> includes the method <code>minSteps</code> which accepts two <code>String</code> parameters and returns an <code>int</code>.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token comment">//java</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">minSteps</span><span class="token punctuation">(</span>String word1<span class="token punctuation">,</span> String word2<span class="token punctuation">)</span>
+</code></pre>
+<pre class=" language-cpp"><code class="prism  language-cpp"><span class="token comment">//cpp</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">minSteps</span><span class="token punctuation">(</span>string word1<span class="token punctuation">,</span> string word2<span class="token punctuation">)</span>
+</code></pre>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment">#python</span>
+<span class="token keyword">def</span> <span class="token function">minSteps</span><span class="token punctuation">(</span>word1<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> word2<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span>
+</code></pre>
+<h2 id="constraints">Constraints</h2>
+<ul>
+<li><code>word1</code> and <code>word2</code> length can be up to 500 characters, for each string.</li>
+<li><code>word1</code> and <code>word2</code> consist of only lowercase English letters.</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><strong>Example 0</strong></p>
+<pre class=" language-java"><code class="prism  language-java">Question1 q1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Question1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>q1<span class="token punctuation">.</span><span class="token function">minSteps</span><span class="token punctuation">(</span><span class="token string">"sea"</span><span class="token punctuation">,</span><span class="token string">"eat"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Returns: 2</span>
+</code></pre>
+<p>We can delete 1 character in each string, to make both becomes <code>ea</code>.</p>
+<p><strong>Example 1</strong></p>
+<pre class=" language-java"><code class="prism  language-java">Question1 q1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Question1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>q1<span class="token punctuation">.</span><span class="token function">minSquareGems</span><span class="token punctuation">(</span><span class="token string">"leetcode"</span><span class="token punctuation">,</span><span class="token string">"etco"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Returns: 4</span>
+</code></pre>
+<p>Deletes 4 characters in first string, to becomes <code>etc</code></p>
+<h2 id="test-cases">Test Cases</h2>
+
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Expected Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“sea”,"eat”</td>
+<td>2</td>
+</tr>
+<tr>
+<td>“leetcode”,"etco”</td>
+<td>4</td>
+</tr>
+<tr>
+<td>“pp”,"itm”</td>
+<td>5</td>
+</tr>
+<tr>
+<td>“nw”,"for”</td>
+<td>5</td>
+</tr>
+<tr>
+<td>“bbs”,"vjkc”</td>
+<td>7</td>
+</tr>
+<tr>
+<td>“ueg”,"samq”</td>
+<td></td>
+</tr>
+<tr>
+<td>“dqdzw”,"fzcmop”</td>
+<td></td>
+</tr>
+<tr>
+<td>“witim”,"gkyvfy”</td>
+<td></td>
+</tr>
+<tr>
+<td>“balhqtzfka”,"rxfdithj”</td>
+<td></td>
+</tr>
+<tr>
+<td>“apsuummteb”,"nodfftho”</td>
+<td></td>
+</tr>
+<tr>
+<td>“luisgmhiihskdpj”,"fdthfuczbanhqswfpw”</td>
+<td></td>
+</tr>
+<tr>
+<td>“jzvjinkpvlzfjzk”,"jpxsbpupirervvqktm”</td>
+<td></td>
+</tr>
+<tr>
+<td>“zvrywlucuzvbsaezeaxa”,“cwzpnxqiregjztcznereui”</td>
+<td></td>
+</tr>
+<tr>
+<td>“chroblesmqczebeuqixm”,"rnzdqrxnbshuauxixkxwsg”</td>
+<td></td>
+</tr>
+<tr>
+<td>“xsugyizivpfyywnldyejjcvpv”,"tqhkdhxbeobrdmzwlyltuyxau”</td>
+<td></td>
+</tr>
+<tr>
+<td>“rcdzsvfldsyqjbqmtoshnsxtv”,"vzmcicdcyoymecjwwcvkvbihm”</td>
+<td></td>
+</tr>
+</tbody>
+</table><p>Please note that the expected outputs for some test cases are not provided.</p>
+<h1 id="question-2">Question 2</h1>
+<h2 id="problem-statement-1">Problem Statement</h2>
+<p><img src="https://cdn.discordapp.com/attachments/623044410287849492/1151139699260395571/Q2.png" alt="Untitled"></p>
+<h2 id="class-definition-1">Class Definition</h2>
+<p><strong>Class: <code>Question2</code></strong></p>
+<p><strong>Method: <code>maxScore</code></strong></p>
+<p>The class <code>Question1</code> includes the method <code>maxScore</code> which accepts two <code>int</code> array parameters and returns an <code>int</code>.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token comment">//java</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxScore</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> mul<span class="token punctuation">)</span>
+</code></pre>
+<pre class=" language-cpp"><code class="prism  language-cpp"><span class="token comment">//cpp</span>
+<span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">maxScore</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> nums<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> mul<span class="token punctuation">)</span>
+</code></pre>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment">#python</span>
+<span class="token keyword">def</span> <span class="token function">maxScore</span><span class="token punctuation">(</span>nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> mul<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span>
+</code></pre>
+<h2 id="constraints-1">Constraints</h2>
+<ul>
+<li>1 ≤ <code>mul.length</code> ≤ 300</li>
+<li><code>mul.length</code> ≤ <code>nums.length</code> ≤ 100000 (10^5)</li>
+<li>-1000 ≤ <code>nums[i]</code>, <code>mul[i]</code> ≤ 1000</li>
+</ul>
+<h2 id="examples-1">Examples</h2>
+<p><strong>Example 0</strong></p>
+<pre class=" language-java"><code class="prism  language-java">Question2 q2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Question2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>q2<span class="token punctuation">.</span><span class="token function">maxScore</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Returns: 14</span>
+</code></pre>
+<p>An optimal solution is as follows:</p>
+<ol>
+<li>Choose from the end, [1,2,3], adding 3 * 3 = 9 to the score.</li>
+<li>Choose from the end, [1,2], adding 2 * 2 = 4 to the score.</li>
+<li>Choose from the end, [1], adding 1 * 1 = 1 to the score.</li>
+</ol>
+<p>The total score is 9 + 4 + 1 = 14.</p>
+<p><strong>Example 1</strong></p>
+<pre class=" language-java"><code class="prism  language-java">Question2 q2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Question2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>q2<span class="token punctuation">.</span><span class="token function">maxScore</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Returns: 0</span>
+</code></pre>
+<p>An optimal solution is as follows:</p>
+<ol>
+<li>Choose from the start, [-5,-3,-3,-2,7,1], adding -5 * -10 = 50 to the score.</li>
+<li>Choose from the start, [-3,-3,-2,7,1], adding -3 * -5 = 15 to the score.</li>
+<li>Choose from the start, [-3,-2,7,1], adding -3 * 3 = -9 to the score.</li>
+<li>Choose from the end, [-2,7,1], adding 1 * 4 = 4 to the score.</li>
+<li>Choose from the end, [-2,7], adding 7 * 6 = 42 to the score.</li>
+</ol>
+<p>The total score is 50 + 15 - 9 + 4 + 42 = 102.</p>
+<p><strong>Hint</strong>: Pretty similar to Alice/Bob candy (or stone) picking game we have discussed during workshop. This Alice Bob candy picking game was also mentioned in Announcements.</p>
+<h2 id="test-cases-1">Test Cases</h2>
+
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Expected Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1, 2, 3] [3, 2, 1]</td>
+<td>14</td>
+</tr>
+<tr>
+<td>[-5, -3, -3, -2, 7, 1] [-10, -5, 3, 4, 6]</td>
+<td>102</td>
+</tr>
+<tr>
+<td>[-688, -977, -729] [-160, -312, -983]</td>
+<td>1297919</td>
+</tr>
+<tr>
+<td>[985, -682, 839, -81, -206, -905, 668, 577, 999, 929, -763, -852, 631, 118, 990, 1, -251, -354, 57, -491, -725, -786, 514, -968, 142] [-771, -131, 290, 796, 906, -751, -355, 889, -981, 692, 642, -543, -270, -372, -778]</td>
+<td>3944466</td>
+</tr>
+<tr>
+<td>[940, 64, 733, 177, -181, -397, -728, -829, -499, 984] [-623, -699, 666, -295]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-14, 487, 193, 950, 817, 281, 795, -799, 726, 65, 817, -127, -498, 231, 620, -667, 414] [-410, 768, 277, -515, 119, 92, 331, -598, -233, 895, 743, -726, 98, -166, -770, 651, -532]</td>
+<td></td>
+</tr>
+<tr>
+<td>[651, 610] [941, 479]</td>
+<td></td>
+</tr>
+<tr>
+<td>[18, 778, -544, 224, 153, 755, -743, -97, 837, -699, 728, 110, -84, 130, -2, -448, 755, 866, 200, 996, -124] [-180, 645, 953, 260, -627, 133, -77, -374, -597, 912, -296, -983, -712, 430, 535, 562, -687]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-327, -895, 578, 448, -681, 41, -912, 101, 794, -308, -514, -777] [245, -527, 55, 337]</td>
+<td></td>
+</tr>
+<tr>
+<td>[667, 407] [562]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-433, 259, 321, 421, 845, -422, -531, -851, -925, 797, 139, -750, -981, -690, 670, -167, -165, -571, 611, -321, -537, -431, -65, 601] [-460, -396, -730, 801, 805, 497, -754, -354, -177, 279, -612, -718, 255, -189]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-354, -630, -876, 798, -344, 301, -164, 132, -917, 248, -646, -412, 331, -456, -975, 893, 435, -733, 562, 670, 677, -204, -935, 845, 625] [-300, 936, -57, -419, 432, 506, -458, -341, -218, 165, -367, -71, -841, 737, -47, 407, 41]</td>
+<td></td>
+</tr>
+<tr>
+<td>[261] [-245]</td>
+<td></td>
+</tr>
+<tr>
+<td>[156, -276, 637, 123, -319, -18, 653, 104, -766, -993] [356, 417, 405, -252, 867, -96, 507]</td>
+<td></td>
+</tr>
+<tr>
+<td>[371, -632, -573, -749, 742, 517, -285, -991, 133, 914, 474, -925, 491, 753, -343, 378, 431, -566, 734, -952, 139] [-311, -653, 700, 422, 528, 685, 460, 6, -458, 0, 992]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-728, -701, 913, 105, 84, -507, -880, -434] [-460, -605, -942]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-717] [688]</td>
+<td></td>
+</tr>
+<tr>
+<td>[-293, -853, -600, 859, 959, -911, 606, -738, -310, -234] [672, 539, 928, -635]</td>
+<td></td>
+</tr>
+</tbody>
+</table><p>Please note that the expected outputs for some test cases are not provided.</p>
+</div>
+</body>
+
+</html>
