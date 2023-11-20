@@ -1,3 +1,4 @@
-# 7007_specialised-programming
+## 7007-Specialised Programming
 ---
-grade: 99.38/100
+### enrolled: 2023 S2
+### grade: 99.38/100
